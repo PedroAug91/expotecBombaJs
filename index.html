@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bomba</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <button id="start" onclick="startGame(this)">Iniciar jogo</button>
+        <div id="container" class="container" style="display: none;">
+            <div class="display" id="display">
+                <span id="texto">Tempo restante:</span>
+                <span id="timer" style="display: ">10:00</span>
+                <form action="">
+                    <input id="input" type="text" placeholder="****" maxlength="4">
+                </form>
+            </div>
+            <div class="keypad-container">
+                <button class="key" id="key1" onclick="updateInput(this)">1</button>
+                <button class="key" id="key2" onclick="updateInput(this)">2</button>
+                <button class="key" id="key3" onclick="updateInput(this)">3</button>
+                <button class="key" id="key4" onclick="updateInput(this)">4</button>
+                <button class="key" id="key5" onclick="updateInput(this)">5</button>
+                <button class="key" id="key6" onclick="updateInput(this)">6</button>
+                <button class="key" id="key7" onclick="updateInput(this)">7</button>
+                <button class="key" id="key8" onclick="updateInput(this)">8</button>
+                <button class="key" id="key9" onclick="updateInput(this)">9</button>
+                <button class="key" id="key10" onclick="removeLastDigit(this)">*</button>
+                <button class="key" id="key11" onclick="updateInput(this)">0</button>
+                <button class="key" id="key12" onclick="check()">#</button>
+            </div>
+        </div>
+        <audio id="explosion-audio" src="sounds/explosion.mp3"></audio>
+        <script src="script.js"></script>
+    </body>
+</html>

@@ -1,0 +1,118 @@
+/* Reseta os estilos padrões */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #121212; /* Fundo escuro para um visual de bomba */
+    color: #fff;
+    font-family: 'Courier New', Courier, monospace; /* Fonte de estilo LCD */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#start {
+    display: block;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 15px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+#start:hover {
+    background-color: #444;
+    transform: scale(1.1);
+}
+
+/* Container centralizado */
+.container {
+    text-align: center;
+    border: 4px solid #333;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: #1a1a1a; /* Fundo do painel */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.8);
+    width: 300px;
+}
+
+/* Display estilo LCD */
+.display {
+    background-color: #0f0; /* Verde estilo LCD */
+    color: #000; /* Texto preto no display */
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: inset 0 -2px 10px rgba(0, 0, 0, 0.5);
+}
+
+#texto {
+    display: block;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+#timer {
+    font-size: 2rem;
+    font-weight: bold;
+    display: block;
+}
+
+#input {
+    border: none;
+    background: none;
+    color: #000;
+    font-size: 1.5rem;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    width: 100%;
+    outline: none;
+}
+
+/* Teclado numérico */
+.keypad-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.key {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 15px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.key:hover {
+    background-color: #444;
+    transform: scale(1.1);
+}
+
+#key10 {
+    background-color: red; /* Botão * em vermelho */
+}
+
+#key12 {
+    background-color: green; /* Botão # em verde */
+}
+
+.key:active {
+    transform: scale(0.9);
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.7);
+}
+
